@@ -1,0 +1,20 @@
+This Python code implements a simple lexer and parser for a programming language with C syntax. The lexer and parser are implemented using PLY (Python Lex-Yacc), which provides lexing and parsing tools similar to those found in Lex and Yacc for C/C++.
+
+Lexer
+The lexer (lexer) defines rules for recognizing tokens in the input text. Tokens include numbers (NUMBER), semicolons (SEMICOLON), arithmetic operators such as plus (PLUS), minus (MINUS), etc., parentheses (LPAREN, RPAREN), braces (LBRACE, RBRACE), comparison operators (LESSTHAN, GREATERTHAN, etc.), identifiers (ID), and reserved keywords like while, if, else, int, char, float, double, void, do, struct, etc. It also handles ignoring spaces and comments.
+
+Parser
+The parser (parser) defines rules for constructing the abstract syntax tree (AST) of the input program. It specifies the grammar rules for statements (statements), declarations (declarations), expressions (expression), assignments (assignment), control flow constructs (if, if-else, while, for, do-while), and structure definitions (struct).
+
+Main Functionality
+The tokenChecker function checks and prints all tokens recognized by the lexer from the input text.
+The parser attempts to parse the input text and construct the AST.
+If the parsing is successful, it prints "Accepted!"; otherwise, it prints "Rejected!" along with the encountered syntax error, if any.
+Instructions
+To use this code:
+
+Run the script.
+Enter your code at the construct > prompt.
+Press Enter.
+The code will either print the tokens recognized or the result of parsing along with the acceptance/rejection status.
+This code serves as a basic foundation for building more complex lexers and parsers for C-like languages. Further enhancements can be made to support additional language features and error handling.
